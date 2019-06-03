@@ -1,3 +1,222 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html,
+body {
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+}
 
+body {
+  font-family: "Titillium Web", sans-serif;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/****** Header ******/
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  padding-top: 15px;
+}
+
+nav a {
+  padding-left: 60px;
+  text-decoration: none;
+  color: lightgray;
+}
+/* ************* */
+
+/* Section One */
+.section-one {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  align-content: center;
+}
+
+.section-one h1 {
+  font-size: 70px;
+  text-align: center;
+}
+
+.section-one button {
+  padding: 10px 30px;
+  border: 1px solid black;
+  font-size: 25px;
+}
+
+button {
+  margin-left: 75px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* ************** */
+
+#hr2 {
+  margin-top: 60px;
+}
+/*  Section One and Two Flex */
+.section-two {
+  display: flex;
+}
+
+.section-two div {
+  padding-left: 30px;
+}
+
+.section-twosub {
+  display: flex;
+}
+
+.section-twosub div {
+  padding-left: 30px;
+}
+
+.middle-img {
+  width: 90%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+/* ********************** */
+
+/* footer */
+
+#copyright {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .circle-img {
+    display: none;
+  }
+
+  .middle-img {
+    margin-left: 10px;
+  }
+
+  .section-two {
+    max-width: 100%;
+  }
+
+  .div1 {
+    padding-left: 50%;
+  }
+  .d1 {
+    padding-left: 50%;
+  }
+
+  header nav {
+    display: flex;
+    padding-top: 90px;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    padding-top: 20px;
+  }
+
+  .section-one {
+    margin: 0;
+  }
+
+  button {
+    margin-left: 50px;
+  }
+
+  .h1Group {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+
+  .section-two {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .middle-img {
+    width: 85%;
+    padding-right: 0;
+    margin: 0;
+  }
+
+  .section-twosub {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  hr {
+    width: 80%;
+  }
+
+  #hr2 {
+    width: 80%;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  header nav a {
+    border-bottom: 2px solid lightgrey;
+    width: 100%;
+    color: lightgray;
+    text-align: center;
+    font-size: 20px;
+    height: 50px;
+  }
+
+  .section-one {
+    margin-right: 100px;
+  }
+
+  button {
+    margin-right: 70px;
+  }
+
+  footer {
+    margin-left: 30px;
+    width: 100vw;
+  }
+}
